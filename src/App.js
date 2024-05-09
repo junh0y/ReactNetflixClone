@@ -23,10 +23,10 @@ const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route path={process.env.PUBLIC_URL + "/"} element={<Layout />}>
+        <Route path={process.env.PROJECT_URL + "/"} element={<Layout />}>
           <Route index element={<MainPage />} />
-          <Route path={process.env.PUBLIC_URL + "/:movieId"} element={<DetailPage />} />
-          <Route path={process.env.PUBLIC_URL + "/search"} element={<SearchPage />} />
+          <Route path={process.env.PROJECT_URL + "/:movieId"} element={<DetailPage />} />
+          <Route path={process.env.PROJECT_URL + "/search"} element={<SearchPage />} />
         </Route>
       </Routes>
     </div>
